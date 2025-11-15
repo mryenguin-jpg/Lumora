@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lumora — Home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="home.html">Lumora</a>
+
+      <nav class="navbar" aria-label="Main">
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1>Handmade epoxy art that brightens every day</h1>
+          <p class="lead">Beautiful, durable pieces — from coasters and serving boards to custom furniture. Each item is hand‑poured, finished, and inspected before it ships.</p>
+
+          <p class="hero-ctas">
+            <a class="btn btn-primary" href="products.html">Browse products</a>
+          </p>
+
+          <ul class="features">
+            <li>Food‑safe finishes</li>
+            <li>Custom commissions</li>
+            <li>Local pickup & worldwide shipping</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <a class="art-card art-1" href="section1.html" title="Small pieces — coasters & accessories">Jewelry Boxes</a>
+          <a class="art-card art-2" href="section2.html" title="Kitchen & serving — boards & trays">Ornaments</a>
+        </div>
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#ffffff" d="M0,32 C240,96 480,-16 720,32 C960,80 1200,0 1440,48 L1440 80 L0 80 Z"></path>
+      </svg>
+    </section>
+
+    <section class="preview wrap" aria-labelledby="featured-title">
+      <h2 id="featured-title">Featured pieces</h2>
+      <div class="preview-row">
+        <article class="preview-card">
+          <img src="Ornaments/ornament7.jpg" alt="Handmade epoxy coasters">
+          <h4>Handmade Ornament</h4>
+          <p class="price">$5</p>
+        </article>
+
+        <article class="preview-card">
+          <img src="Jewelry Boxes/Jewelrybox1.jpg" alt="Jewelry box: Red">
+          <h4>Jewelry Box: Red</h4>
+          <p class="price">$25</p>
+        </article>
+
+        <article class="preview-card">
+          <img src="Jewelry Boxes/Jewelrybox6.jpg" alt="Mini epoxy key holder">
+          <h4>Jewelry Box: Turquoise</h4>
+          <p class="price">$25</p>
+        </article>
+
+        <article class="preview-card">
+          <img src="Ornaments/ornament.jpg" alt="Star shaped ornament">
+          <h4>Star Shaped Ornament</h4>
+          <p class="price">$10</p>
+        </article>
+      </div>
+
+      <p class="center"><a class="btn btn-ghost" href="products.html">See all products</a></p>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© Lumora — handmade epoxy creations</p>
+      <p class="small">Made with care. Questions? <a href="#contactModal">Get in touch</a></p>
+    </div>
+  </footer>
+
+<!-- CSS-only contact modal (opens when #contactModal is in the URL) -->
+<div id="contactModal" class="modal-overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+    <a class="modal-close" href="#" aria-label="Close">&times;</a>
+    <h3 id="contactTitle">Get in touch</h3>
+    
+    <!-- mailto form — replace you@yourdomain.com with your email -->
+    <form action="mailto:you@yourdomain.com" method="post" enctype="text/plain">
+      <label>
+        Your name
+        <input type="text" name="name" required>
+      </label>
+      
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      
+      <label>
+        Subject
+        <input type="text" name="subject" placeholder="Subject">
+      </label>
+      
+      <label>
+        Message
+        <textarea name="message" rows="5" placeholder="How can we help?"></textarea>
+      </label>
+      
+      <div class="modal-actions">
+        <button type="submit" class="btn btn-primary">Send email</button>
+        <a class="btn btn-ghost" href="#">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

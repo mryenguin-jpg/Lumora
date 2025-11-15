@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Lumora</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+  <header class="products-header">
+    <div class="wrap header-inner">
+      <div class="header-copy">
+        <h1>Lumora</h1>
+
+        <div class="header-ctas">
+          <a class="btn btn-small" href="#products-small">Jewelry Box</a>
+          <a class="btn btn-small" href="#products-serving">Ornaments</a>
+          <a class="btn btn-small" href="#products-furniture">Coming soon...</a>
+        </div>
+      </div>
+
+      <div class="header-art" aria-hidden="true">
+        <div class="hero-card hc-1"><img src="pictures/jewelryboxes.jpg" alt=""></div>
+        <div class="hero-card hc-2"><img src="pictures/ornament3.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <svg class="header-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#ffffff" d="M0,32 C240,96 480,-16 720,32 C960,80 1200,0 1440,48 L1440 80 L0 80 Z"></path>
+    </svg>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section 1: Small pieces -->
+  <section class="section-p1" id="products-small">
+    <div class="wrap">
+      <h2>Jewelry boxes</h2>
+
+      <div class="pro-container">
+        <div class="pro">
+          <img src="Jewelry Boxes/Jewelrybox1.jpg" alt="Walnut jewelry box with resin inlay">
+          <div class="description">
+            <h5>Jewelry Box: Blue</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Jewelry Box: Blue">Buy</a>
+        </div>
+
+        <div class="pro">
+          <img src="Jewelry Boxes/Jewelrybox2.jpg" alt="Velvet-lined mini jewelry box">
+          <div class="description">
+            <h5>Jewelry Box: Pink</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Jewelry Box: Pink">Buy</a>
+        </div>
+
+        <div class="pro">
+          <img src="Jewelry Boxes/Jewelrybox3.jpg" alt="Round resin topped jewelry box">
+          <div class="description">
+            <h5>Jewelry Box: Purple</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Jewelry Box: Purple">Buy</a>
+        </div>
+      </div>
+
+      <p class="center section-actions" style="margin-top:18px;">
+        <a class="btn-view" href="section1.html" aria-label="View all Jewelry boxes">View all Jewelry boxes</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: Kitchen & Serving -->
+  <section class="section-p1" id="products-serving">
+    <h2>Ornaments</h2>
+
+    <div class="pro-container">
+
+      
+      <div class="pro">
+          <img src="Ornaments/Ornament1.jpg" alt="Velvet‑Lined Mini Jewelry Box">
+          <div class="description">
+            <h5>Ornament: Snow flake 1</h5>
+            <h4>$10.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Ornament: Snow flake 1">Buy</a>
+      </div>
+
+      <div class="pro">
+          <img src="Ornaments/Ornament2.jpg" alt="Round Resin‑Topped Jewelry Box">
+          <div class="description">
+            <h5>Ornament: Bell</h5>
+            <h4>$10.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Ornament: Bell">Buy</a>
+      </div>
+
+      <div class="pro">
+          <img src="Ornaments/Ornament3.jpg" alt="Maple jewelry box with blue resin">
+          <div class="description">
+            <h5>Ornament: Star</h5>
+            <h4>$10.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Ornament: Star">Buy</a>
+        </div>
+    </div>
+
+    <!-- NEW: view all button for section 2 -->
+    <p class="center section-actions">
+      <a class="btn btn-view" href="section2.html" aria-label="View all section 2">View all Ornaments</a>
+    </p>
+  </section>
+
+
+  <!-- CSS-only modal using :target -->
+  <div id="orderModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <a class="modal-close" href="#" aria-label="Close">&times;</a>
+      <h3 id="modalTitle">Order / Contact</h3>
+
+      <!-- mailto form (replace orders@example.com) -->
+      <form action="mailto:orders@example.com" method="post" enctype="text/plain">
+        <label>
+          Product
+          <select name="product" required>
+            <option>Jewelry Box: Blue</option>
+            <option>Jewelry Box: Pink</option>
+            <option>Jewelry Box: Purple</option>
+            <option>Epoxy Table Top (Small)</option>
+            <option>Small Trinket Dish</option>
+            <option>Resin Inlay Cutting Board</option>
+            <option>River Resin Console Table</option>
+          </select>
+        </label>
+
+        <label>
+          Your name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Any questions or custom requests"></textarea>
+        </label>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn-primary">Send order</button>
+          <a class="btn-cancel" href="#">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

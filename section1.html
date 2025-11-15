@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Jewelry boxes</title>
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="sections.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="products.html">All products</a></li>
+      <li><a href="section2.html">Ornaments</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="section-p1" id="products-small">
+      <div class="section-head wrap">
+        <div>
+          <h2>Jewelry boxes</h2>
+        </div>
+      </div>
+
+      <div class="pro-container wrap" aria-live="polite">
+        <div class="pro">
+          <img src="Jewelry Boxes/jewelrybox1.jpg" alt="Walnut Jewelry Box — River Inlay">
+          <div class="description">
+            <h5>Jewelry Box: Blue</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Jewelry Box: Blue">Buy</a>
+        </div>
+
+        <div class="pro">
+          <img src="Jewelry Boxes/jewelrybox2.jpg" alt="Velvet‑Lined Mini Jewelry Box">
+          <div class="description">
+            <h5>Jewelry Box: Pink</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Jewelry Box: Pink">Buy</a>
+        </div>
+
+        <div class="pro">
+          <img src="Jewelry Boxes/jewelrybox3.jpg" alt="Round Resin‑Topped Jewelry Box">
+          <div class="description">
+            <h5>Jewelry Box: Purple</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Jewelry Box: Purple">Buy</a>
+        </div>
+
+        <div class="pro">
+          <img src="Jewelry Boxes/jewelrybox4.jpg" alt="Maple jewelry box with blue resin">
+          <div class="description">
+            <h5>Jewelry Box: Turquoise</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Jewelry Box: Turquoise">Buy</a>
+        </div>
+
+        <div class="pro">
+          <img src="Jewelry Boxes/jewelrybox5.jpg" alt="Small lacquered jewelry box">
+          <div class="description">
+            <h5>Jewelry Box: Red</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Lacquered Mini Jewelry Box">Buy</a>
+        </div>
+
+        <div class="pro">
+          <img src="Jewelry Boxes/jewelrybox6.jpg" alt="Oval resin inlay jewelry box">
+          <div class="description">
+            <h5>Jewelry Box: Turquoise with Glitter</h5>
+            <h4>$25.00</h4>
+          </div>
+          <a class="buy-btn" href="#orderModal" data-product="Jewelry Box: Turquoise with Glitter">Buy</a>
+        </div>
+      </div>
+
+
+
+      <p class="center" style="margin-top:18px;">
+        <a class="btn-back" href="home.html" aria-label="Back to home">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Back to home
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <!-- CSS-only modal using :target -->
+  <div id="orderModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <a class="modal-close" href="#" aria-label="Close">&times;</a>
+      <h3 id="modalTitle">Order / Contact</h3>
+
+      <form action="mailto:orders@example.com" method="post" enctype="text/plain">
+        <label>
+          Product
+          <select name="product" required>
+            <option>Jewelry Box: Blue</option>
+            <option>Jewelry Box: Pink</option>
+            <option>Jewelry Box: Purple</option>
+            <option>Jewelry Box: Turquoise</option>
+            <option>Jewelry Box: Red</option>
+            <option>Jewelry Box: Turquoise with Glitter</option>
+          </select>
+        </label>
+
+        <label>
+          Your name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Any custom requests or questions"></textarea>
+        </label>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn-primary">Send order</button>
+          <a class="btn-cancel" href="#">Cancel</a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>
